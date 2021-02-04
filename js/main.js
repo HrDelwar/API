@@ -107,7 +107,7 @@ function postDataToServer(postData) {
 /// get activity data with api from bored website
 // get show data in api section
 function activityApiData() {
-    fetch('//http://www.boredapi.com/api/activity?minprice=0&maxprice=0.1')
+    fetch('https://www.boredapi.com/api/activity?minprice=0&maxprice=0.1')
         .then(res => res.json())
         .then(data => {
             getId('activity').innerText = data.activity + '!';
